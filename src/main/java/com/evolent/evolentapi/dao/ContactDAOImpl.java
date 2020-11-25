@@ -27,7 +27,7 @@ public class ContactDAOImpl implements ContactDAO {
 
 	public void save(Contact contact) {
 		Session currentSession = entityManager.unwrap(Session.class);
-		currentSession.save(contact);
+		currentSession.saveOrUpdate(contact);
 	}
 
 	public void delete(int id) {

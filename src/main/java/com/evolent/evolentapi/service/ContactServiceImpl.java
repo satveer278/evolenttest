@@ -32,6 +32,7 @@ public class ContactServiceImpl implements ContactService {
 		contactDAO.delete(id);
 	}
 
+
 	
 
 }
